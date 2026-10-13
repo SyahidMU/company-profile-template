@@ -41,18 +41,17 @@
                 <!-- Desktop Navigation -->
                 <div class="hidden md:flex items-center gap-8">
                     <a href="{{ route('home') }}"
-                        class="text-white/80 hover:text-white transition-colors {{ request()->routeIs('home') ? 'text-white font-medium' : '' }}">Home</a>
+                        class="text-white/80 hover:text-white transition-colors {{ request()->routeIs('home') ? 'text-white font-medium' : '' }}">Beranda</a>
                     <a href="{{ route('about') }}"
-                        class="text-white/80 hover:text-white transition-colors {{ request()->routeIs('about') ? 'text-white font-medium' : '' }}">About</a>
+                        class="text-white/80 hover:text-white transition-colors {{ request()->routeIs('about') ? 'text-white font-medium' : '' }}">Tentang Kami</a>
                     <a href="{{ route('services') }}"
-                        class="text-white/80 hover:text-white transition-colors {{ request()->routeIs('services') ? 'text-white font-medium' : '' }}">Services</a>
+                        class="text-white/80 hover:text-white transition-colors {{ request()->routeIs('services') ? 'text-white font-medium' : '' }}">Layanan</a>
                     <a href="{{ route('team') }}"
-                        class="text-white/80 hover:text-white transition-colors {{ request()->routeIs('team') ? 'text-white font-medium' : '' }}">Team</a>
+                        class="text-white/80 hover:text-white transition-colors {{ request()->routeIs('team') ? 'text-white font-medium' : '' }}">Tim</a>
                     <a href="{{ route('portfolio') }}"
-                        class="text-white/80 hover:text-white transition-colors {{ request()->routeIs('portfolio') ? 'text-white font-medium' : '' }}">Portfolio</a>
+                        class="text-white/80 hover:text-white transition-colors {{ request()->routeIs('portfolio') ? 'text-white font-medium' : '' }}">Galeri Produk</a>
                     <a href="{{ route('contact') }}"
-                        class="px-5 py-2.5 rounded-xl gradient-primary text-white font-medium hover:shadow-lg hover:shadow-primary-500/30 transition-all">Contact
-                        Us</a>
+                        class="px-5 py-2.5 rounded-xl gradient-primary text-white font-medium hover:shadow-lg hover:shadow-primary-500/30 transition-all">Hubungi Kami</a>
                 </div>
 
                 <!-- Mobile Menu Button -->
@@ -72,17 +71,17 @@
             <div x-show="open" x-transition class="md:hidden pb-4">
                 <div class="flex flex-col gap-2">
                     <a href="{{ route('home') }}"
-                        class="px-4 py-2 rounded-lg text-white/80 hover:text-white hover:bg-white/5 transition-colors">Home</a>
+                        class="px-4 py-2 rounded-lg text-white/80 hover:text-white hover:bg-white/5 transition-colors">Beranda</a>
                     <a href="{{ route('about') }}"
-                        class="px-4 py-2 rounded-lg text-white/80 hover:text-white hover:bg-white/5 transition-colors">About</a>
+                        class="px-4 py-2 rounded-lg text-white/80 hover:text-white hover:bg-white/5 transition-colors">Tentang Kami</a>
                     <a href="{{ route('services') }}"
-                        class="px-4 py-2 rounded-lg text-white/80 hover:text-white hover:bg-white/5 transition-colors">Services</a>
+                        class="px-4 py-2 rounded-lg text-white/80 hover:text-white hover:bg-white/5 transition-colors">Layanan</a>
                     <a href="{{ route('team') }}"
-                        class="px-4 py-2 rounded-lg text-white/80 hover:text-white hover:bg-white/5 transition-colors">Team</a>
+                        class="px-4 py-2 rounded-lg text-white/80 hover:text-white hover:bg-white/5 transition-colors">Tim</a>
                     <a href="{{ route('portfolio') }}"
-                        class="px-4 py-2 rounded-lg text-white/80 hover:text-white hover:bg-white/5 transition-colors">Portfolio</a>
+                        class="px-4 py-2 rounded-lg text-white/80 hover:text-white hover:bg-white/5 transition-colors">Galeri Produk</a>
                     <a href="{{ route('contact') }}"
-                        class="px-4 py-2 rounded-lg gradient-primary text-white text-center mt-2">Contact Us</a>
+                        class="px-4 py-2 rounded-lg gradient-primary text-white text-center mt-2">Hubungi Kami</a>
                 </div>
             </div>
         </div>
@@ -150,18 +149,18 @@
 
                 <!-- Quick Links -->
                 <div>
-                    <h3 class="text-white font-semibold mb-4">Quick Links</h3>
+                    <h3 class="text-white font-semibold mb-4">Tautan Cepat</h3>
                     <ul class="space-y-3">
                         <li><a href="{{ route('home') }}"
-                                class="text-white/60 hover:text-white transition-colors">Home</a></li>
+                                class="text-white/60 hover:text-white transition-colors">Beranda</a></li>
                         <li><a href="{{ route('about') }}"
-                                class="text-white/60 hover:text-white transition-colors">About Us</a></li>
+                                class="text-white/60 hover:text-white transition-colors">Tentang Kami</a></li>
                         <li><a href="{{ route('services') }}"
-                                class="text-white/60 hover:text-white transition-colors">Services</a></li>
+                                class="text-white/60 hover:text-white transition-colors">Layanan</a></li>
                         <li><a href="{{ route('portfolio') }}"
-                                class="text-white/60 hover:text-white transition-colors">Portfolio</a></li>
+                                class="text-white/60 hover:text-white transition-colors">Galeri Produk</a></li>
                         <li><a href="{{ route('contact') }}"
-                                class="text-white/60 hover:text-white transition-colors">Contact</a></li>
+                                class="text-white/60 hover:text-white transition-colors">Hubungi Kami</a></li>
                     </ul>
                 </div>
 

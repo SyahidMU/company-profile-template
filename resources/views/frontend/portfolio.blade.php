@@ -65,7 +65,7 @@
                                 @if($portfolio->project_url)
                                     
 <div class="absolute inset-0 bg-gradient-to-t from-dark-900 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center pb-6">
-    <a href="https://wa.me/6285951572846?text={{ urlencode('Halo, saya tertarik dengan produk ' . $portfolio->title . '. Boleh saya mendapatkan informasi lebih lanjut?') }}"
+    <a href="https://wa.me/6282219005089?text={{ urlencode('Halo, saya tertarik dengan produk ' . $portfolio->title . '. Boleh saya mendapatkan informasi lebih lanjut?') }}"
     target="_blank"
     rel="noopener noreferrer"
     class="px-6 py-2 rounded-full gradient-primary text-white text-sm font-medium">
