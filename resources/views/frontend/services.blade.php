@@ -23,10 +23,24 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 @forelse($services as $index => $service)
-                    <div class="glass rounded-2xl p-8 hover-lift" data-aos="fade-up" data-aos-delay="{{ ($index % 3) * 100 }}">
-                        <div class="w-16 h-16 rounded-2xl gradient-primary flex items-center justify-center mb-6">
-                            @include('frontend.partials.icon', ['icon' => $service->icon ?? 'code'])
-                        </div>
+                    
+<div class="glass rounded-2xl p-8 hover-lift" data-aos="fade-up" data-aos-delay="{{ ($index % 3) * 100 }}">
+
+    @if($service->image)
+        <div class="mb-6 overflow-hidden rounded-xl">
+            <img
+                src="{{ $service->image_url }}"
+                alt="{{ $service->title }}"
+                class="w-full h-56 object-cover"
+                loading="lazy"
+            >
+        </div>
+    @else
+        <div class="w-16 h-16 rounded-2xl gradient-primary flex items-center justify-center mb-6">
+            @include('frontend.partials.icon', ['icon' => $service->icon ?? 'code'])
+        </div>
+    @endif
+
 
                         <h3 class="text-xl font-semibold text-white mb-3">{{ $service->title }}</h3>
                         <p class="text-white/60 mb-6 leading-relaxed">{{ $service->description }}</p>
