@@ -46,7 +46,7 @@
             <div data-aos="fade-left" class="hidden lg:block">
                 <div class="relative">
                     @if($hero->foreground_image_url ?? false)
-                        <img src="{{ $hero->foreground_image_url }}" alt="Hero" class="relative z-10 animate-float">
+                        <img src="{{ $hero->foreground_image_url }}" alt="Bantal custom sesuai keinginan pelanggan" class="relative z-10 animate-float">
                     @else
                         <!-- Default Hero Illustration -->
                         <div class="glass rounded-3xl p-8 relative">
@@ -73,7 +73,7 @@
 <section class="py-24 relative">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16" data-aos="fade-up">
-            <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Our Services</h2>
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Layanan Bantal Custom</h2>
             <p class="text-white/60 max-w-2xl mx-auto">Comprehensive solutions tailored to transform your digital presence and drive business growth.</p>
         </div>
         
@@ -109,7 +109,7 @@
         <div class="grid lg:grid-cols-2 gap-16 items-center">
             <div data-aos="fade-right">
                 @if($about->image_url)
-                    <img src="{{ $about->image_url }}" alt="About" class="rounded-3xl shadow-2xl">
+                    <img src="{{ $about->image_url }}" alt="Profil usaha bantal custom" class="rounded-3xl shadow-2xl">
                 @else
                     <div class="glass rounded-3xl aspect-square flex items-center justify-center">
                         <div class="text-center">
@@ -118,7 +118,7 @@
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
                                 </svg>
                             </div>
-                            <p class="text-white/60">About Us Image</p>
+                            <p class="text-white/60">Foto Profil UMKM</p>
                         </div>
                     </div>
                 @endif
@@ -133,26 +133,26 @@
                     @if($about->years_experience)
                     <div>
                         <p class="text-3xl font-bold gradient-text">{{ $about->years_experience }}+</p>
-                        <p class="text-white/60 text-sm">Years Experience</p>
+                        <p class="text-white/60 text-sm">Tahun Pengalaman</p>
                     </div>
                     @endif
                     @if($about->projects_completed)
                     <div>
                         <p class="text-3xl font-bold gradient-text">{{ $about->projects_completed }}+</p>
-                        <p class="text-white/60 text-sm">Projects Done</p>
+                        <p class="text-white/60 text-sm">Pesanan Selesai</p>
                     </div>
                     @endif
                     @if($about->happy_clients)
                     <div>
                         <p class="text-3xl font-bold gradient-text">{{ $about->happy_clients }}+</p>
-                        <p class="text-white/60 text-sm">Happy Clients</p>
+                        <p class="text-white/60 text-sm">Pelanggan Kami</p>
                     </div>
                     @endif
                 </div>
                 @endif
                 
                 <a href="{{ route('about') }}" class="inline-flex items-center px-6 py-3 rounded-xl gradient-primary text-white font-semibold hover:shadow-lg hover:shadow-primary-500/30 transition-all">
-                    Learn More About Us
+                    Tentang Usaha Kami
                     <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
                     </svg>
@@ -168,8 +168,10 @@
 <section class="py-24">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16" data-aos="fade-up">
-            <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Featured Work</h2>
-            <p class="text-white/60 max-w-2xl mx-auto">Explore some of our recent projects and see how we help businesses succeed.</p>
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Produk Unggulan</h2>
+            <p class="text-white/60 max-w-2xl mx-auto">
+    Informasi layanan bantal custom untuk membantu Anda menemukan produk sesuai kebutuhan.
+</p>
         </div>
         
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -194,7 +196,7 @@
         
         <div class="text-center mt-12">
             <a href="{{ route('portfolio') }}" class="inline-flex items-center px-8 py-4 rounded-xl glass text-white font-semibold hover:bg-white/20 transition-all">
-                View All Projects
+            Lihat Semua Produk
                 <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
                 </svg>
@@ -213,8 +215,8 @@
     
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         <div class="text-center mb-16" data-aos="fade-up">
-            <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">What Our Clients Say</h2>
-            <p class="text-white/60 max-w-2xl mx-auto">Don't just take our word for it — hear from some of our satisfied clients.</p>
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Kata Pelanggan Kami</h2>
+            <p class="text-white/60 max-w-2xl mx-auto">Simak pengalaman pelanggan yang telah menggunakan produk bantal custom kami.</p>
         </div>
         
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -254,10 +256,10 @@
         <div class="glass rounded-3xl p-12 md:p-16 text-center relative overflow-hidden" data-aos="fade-up">
             <div class="absolute inset-0 gradient-primary opacity-10"></div>
             <div class="relative">
-                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Ready to Start Your Project?</h2>
-                <p class="text-white/70 max-w-2xl mx-auto mb-8">Let's work together to bring your vision to life. Get in touch with us today.</p>
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Wujudkan Bantal Custom Impian Anda?</h2>
+                <p class="text-white/70 max-w-2xl mx-auto mb-8">Konsultasikan model, ukuran, bahan, dan desain bantal yang Anda inginkan bersama kami.</p>
                 <a href="{{ route('contact') }}" class="inline-flex items-center px-8 py-4 rounded-xl gradient-primary text-white font-semibold hover:shadow-lg hover:shadow-primary-500/30 transform hover:-translate-y-1 transition-all duration-300">
-                    Get In Touch
+                    Hubungi Kami
                     <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
                     </svg>

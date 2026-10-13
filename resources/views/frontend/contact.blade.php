@@ -1,6 +1,6 @@
 @extends('frontend.layouts.app')
 
-@section('title', 'Contact Us - ' . ($settings->company_name ?? 'Company'))
+@section('title', 'Kontak Kami - ' . ($settings->company_name ?? 'UMKM Bantal Custom'))
 
 @section('content')
     <!-- Page Header -->
@@ -12,9 +12,10 @@
 
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
             <div class="text-center" data-aos="fade-up">
-                <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">Get In Touch</h1>
-                <p class="text-white/60 max-w-2xl mx-auto">Have a project in mind? We'd love to hear from you.</p>
-            </div>
+                <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">Hubungi Kami</h1>
+<p class="text-white/60 max-w-2xl mx-auto">
+    Tertarik dengan bantal custom kami? Hubungi kami untuk mendapatkan informasi produk.
+</p>
         </div>
     </section>
 
@@ -25,8 +26,8 @@
                 <!-- Contact Info -->
                 <div class="lg:col-span-1 space-y-8" data-aos="fade-right">
                     <div>
-                        <h2 class="text-2xl font-bold text-white mb-6">Contact Information</h2>
-                        <p class="text-white/60 mb-8">Feel free to reach out through any of these channels.</p>
+                        <h2 class="text-2xl font-bold text-white mb-6">Informasi Kontak</h2>
+                        <p class="text-white/60 mb-8">Silakan hubungi kami melalui informasi kontak berikut.</p>
                     </div>
 
                     @if($settings->email ?? false)
@@ -54,7 +55,7 @@
                                 </svg>
                             </div>
                             <div>
-                                <h3 class="text-white font-semibold mb-1">Phone</h3>
+                                <h3 class="text-white font-semibold mb-1">Telepon / WhatsApp</h3>
                                 <p class="text-white/60">{{ $settings->phone }}</p>
                             </div>
                         </div>
@@ -71,7 +72,7 @@
                                 </svg>
                             </div>
                             <div>
-                                <h3 class="text-white font-semibold mb-1">Address</h3>
+                                <h3 class="text-white font-semibold mb-1">Alamat</h3>
                                 <p class="text-white/60">{{ $settings->address }}</p>
                             </div>
                         </div>
@@ -80,7 +81,7 @@
                     <!-- Social Links -->
                     @if(($settings->facebook ?? false) || ($settings->twitter ?? false) || ($settings->instagram ?? false) || ($settings->linkedin ?? false))
                         <div class="pt-8 border-t border-white/10">
-                            <h3 class="text-white font-semibold mb-4">Follow Us</h3>
+                            <h3 class="text-white font-semibold mb-4">Ikuti Kami</h3>
                             <div class="flex items-center gap-4">
                                 @if($settings->facebook ?? false)
                                     <a href="{{ $settings->facebook }}" target="_blank"
@@ -137,52 +138,52 @@
 
                             <div class="grid md:grid-cols-2 gap-6">
                                 <div>
-                                    <label for="name" class="block text-sm font-medium text-white/80 mb-2">Your Name <span
+                                    <label for="name" class="block text-sm font-medium text-white/80 mb-2">Nama Lengkap <span
                                             class="text-red-400">*</span></label>
                                     <input type="text" id="name" name="name" value="{{ old('name') }}" required
                                         class="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-white/40 focus:outline-none focus:border-primary-500 focus:ring-2 focus:ring-primary-500/20 transition-all"
-                                        placeholder="John Doe">
+                                        placeholder="Masukkan nama lengkap">
                                     @error('name')<p class="mt-1 text-sm text-red-400">{{ $message }}</p>@enderror
                                 </div>
                                 <div>
-                                    <label for="email" class="block text-sm font-medium text-white/80 mb-2">Email Address
+                                    <label for="email" class="block text-sm font-medium text-white/80 mb-2">Alamat Email
                                         <span class="text-red-400">*</span></label>
                                     <input type="email" id="email" name="email" value="{{ old('email') }}" required
                                         class="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-white/40 focus:outline-none focus:border-primary-500 focus:ring-2 focus:ring-primary-500/20 transition-all"
-                                        placeholder="john@example.com">
+                                        placeholder="nama@email.com">
                                     @error('email')<p class="mt-1 text-sm text-red-400">{{ $message }}</p>@enderror
                                 </div>
                             </div>
 
                             <div class="grid md:grid-cols-2 gap-6">
                                 <div>
-                                    <label for="phone" class="block text-sm font-medium text-white/80 mb-2">Phone
-                                        Number</label>
+                                    <label for="phone" class="block text-sm font-medium text-white/80 mb-2">Nomor Telepon
+                                        </label>
                                     <input type="text" id="phone" name="phone" value="{{ old('phone') }}"
                                         class="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-white/40 focus:outline-none focus:border-primary-500 focus:ring-2 focus:ring-primary-500/20 transition-all"
-                                        placeholder="+1 (555) 123-4567">
+                                        placeholder="08xxxxxxxxxx">
                                 </div>
                                 <div>
                                     <label for="subject"
-                                        class="block text-sm font-medium text-white/80 mb-2">Subject</label>
+                                        class="block text-sm font-medium text-white/80 mb-2">Subjek Pesan</label>
                                     <input type="text" id="subject" name="subject" value="{{ old('subject') }}"
                                         class="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-white/40 focus:outline-none focus:border-primary-500 focus:ring-2 focus:ring-primary-500/20 transition-all"
-                                        placeholder="Project Inquiry">
+                                        placeholder="Pertanyaan Produk Bantal Custom">
                                 </div>
                             </div>
 
                             <div>
-                                <label for="message" class="block text-sm font-medium text-white/80 mb-2">Message <span
+                                <label for="message" class="block text-sm font-medium text-white/80 mb-2">Pesan Anda <span
                                         class="text-red-400">*</span></label>
                                 <textarea id="message" name="message" rows="5" required
                                     class="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-white/40 focus:outline-none focus:border-primary-500 focus:ring-2 focus:ring-primary-500/20 transition-all resize-none"
-                                    placeholder="Tell us about your project...">{{ old('message') }}</textarea>
+                                    placeholder="Tuliskan pertanyaan atau kebutuhan bantal custom Anda...">{{ old('message') }}</textarea>
                                 @error('message')<p class="mt-1 text-sm text-red-400">{{ $message }}</p>@enderror
                             </div>
 
                             <button type="submit"
                                 class="w-full py-4 rounded-xl gradient-primary text-white font-semibold hover:shadow-lg hover:shadow-primary-500/30 transform hover:-translate-y-0.5 transition-all duration-300">
-                                Send Message
+                                Kirim Pesan
                             </button>
                         </form>
                     </div>

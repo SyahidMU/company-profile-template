@@ -1,6 +1,6 @@
 @extends('frontend.layouts.app')
 
-@section('title', 'About Us - ' . ($settings->company_name ?? 'Company'))
+@section('title', 'Tentang Kami - ' . ($settings->company_name ?? 'UMKM Bantal Custom'))
 
 @section('content')
     <!-- Page Header -->
@@ -11,9 +11,11 @@
 
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
             <div class="text-center" data-aos="fade-up">
-                <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">About Us</h1>
-                <p class="text-white/60 max-w-2xl mx-auto">Learn more about our story, mission, and the team behind our
-                    success.</p>
+<h1 class="text-4xl md:text-5xl font-bold text-white mb-4">Tentang Kami</h1>
+<p class="text-white/60 max-w-2xl mx-auto">
+    Kenali usaha kami dan informasi mengenai layanan bantal custom.
+</p>
+
             </div>
         </div>
     </section>
@@ -39,7 +41,7 @@
                     </div>
 
                     <div data-aos="fade-left">
-                        <h2 class="text-3xl font-bold text-white mb-6">{{ $about->title }}</h2>
+                    <h2 class="text-3xl font-bold text-white mb-6">Profil UMKM Kami</h2>
                         <p class="text-white/70 leading-relaxed whitespace-pre-line">{{ $about->content }}</p>
                     </div>
                 </div>
@@ -117,8 +119,8 @@
         <section class="py-24 border-t border-white/10">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-16" data-aos="fade-up">
-                    <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Meet Our Team</h2>
-                    <p class="text-white/60 max-w-2xl mx-auto">The talented people behind our success.</p>
+                    <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Tim Kami</h2>
+                    <p class="text-white/60 max-w-2xl mx-auto">Orang-orang yang terlibat dalam kegiatan usaha kami.</p>
                 </div>
 
                 <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -164,7 +166,7 @@
                 <div class="text-center mt-12">
                     <a href="{{ route('team') }}"
                         class="inline-flex items-center text-primary-400 hover:text-primary-300 font-medium">
-                        View All Team Members
+                        Lihat Semua Anggota Tim
                         <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
                         </svg>
